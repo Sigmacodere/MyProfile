@@ -55,6 +55,17 @@
             <i class="fab fa-spotify"></i> Spotify
           </a>
         </div>
+        <audio id="bg-music" autoplay loop>
+          <source src="Unknown Brain - Say Goodbye (ft. Marvin Divine) ｜ Trap ｜ NCS - Copyright Free Music.mp3" type="audio/mpeg">
+          Trình duyệt của bạn không hỗ trợ audio.
+        </audio> 
+        <script>
+          window.addEventListener("load", function() {
+            const audio = document.getElementById("bg-music");
+            audio.play().catch((error) => {
+              console.log("Không tự động phát được do trình duyệt chặn:", error);
+            });
+          });
       </body>
     </html>
   </body>
