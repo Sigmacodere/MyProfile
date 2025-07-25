@@ -15,6 +15,10 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
           rel="stylesheet"
         />
+    <audio id="bg-music" autoplay loop>
+          <source src="./NCS.mp3" type="audio/mpeg">
+          Trình duyệt của bạn không hỗ trợ audio.
+          </audio>
       </head>
       <body>
         <div class="container">
@@ -54,21 +58,6 @@
            href="https://open.spotify.com/user/317ybmuflgoxb6atptjexdmtif34?si=4lNq0iUcSdKDAWtJXTHHPw">
             <i class="fab fa-spotify"></i> Spotify
           </a>
-        </div>
-      <div>
-          <audio id="bg-music" autoplay loop>
-          <source src="./NCS.mp3" type="audio/mpeg">
-          Trình duyệt của bạn không hỗ trợ audio.
-        </audio>
-        <button onclick="document.getElementById('bg-music').play()">▶️ Phát Nhạc</button>
-        <script>
-          window.addEventListener("load", function () {
-            const audio = document.getElementById("bg-music");
-            audio.play().catch((error) => {
-              console.log("Không tự động phát được do trình duyệt chặn:", error);
-            });
-          });
-        </script>
         </div>
       </body>
     </html>
